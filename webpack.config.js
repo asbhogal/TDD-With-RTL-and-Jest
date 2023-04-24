@@ -7,7 +7,7 @@ const   path = require("path"),
             new CleanWebpackPlugin(),
             new MiniCSSExtractPlugin(),
             new HTMLWebpackPlugin({
-                title: "React - TDD with RTL and Jest",
+                title: "TDD with RTL and Jest",
                 author: "Aman Singh Bhogal",
                 template: "./src/index.html"
             }),
@@ -50,10 +50,6 @@ module.exports = {
                 use: {
                     loader: "babel-loader",
                 },
-            },
-            {
-                test: /swiper\.esm\.js/,
-                sideEffects: false
             },
             {
                 test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
