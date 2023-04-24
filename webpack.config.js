@@ -15,7 +15,7 @@ const   path = require("path"),
 
 let     mode = "development";
 
-process.env.NODE_ENV === "production" ? mode = "production" : plugins.push(new ReactRefreshWebpackPlugin());
+// process.env.NODE_ENV === "production" ? mode = "production" : plugins.push(new ReactRefreshWebpackPlugin());
 
 module.exports = {
     mode: mode,
